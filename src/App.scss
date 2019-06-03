@@ -6,11 +6,18 @@
     color: coral;
   }
 
+  .measured-height {
+    position: fixed;
+    top: 150px;
+    right: 20px;
+    z-index: 10;
+    color: white;
+  }
+
   .shiulon {
     height: 100%;
 
     .questions-container {
-      height: 100%;
       padding: 0 20px;
       text-align: left;
       overflow-y: scroll;
