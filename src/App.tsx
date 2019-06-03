@@ -18,11 +18,14 @@ const App: FunctionComponent<{}> = () => {
   return (
     <div className="App">
       <h2 className="title">Bugs recreation page</h2>
-      <div className="shiulon">
-        <div className="questions-container">
-          {questionsArray.map((val, index) => (
-            <SurveyQuestion key={index} onBlur={onInputBlur} />
-          ))}
+      <div className="app-header" />
+      <div className="view-root">
+        <div className="shiulon">
+          <div className="questions-container">
+            {questionsArray.map((val, index) => (
+              <SurveyQuestion key={index} onBlur={onInputBlur} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
