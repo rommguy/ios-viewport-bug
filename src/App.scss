@@ -1,0 +1,56 @@
+html {
+  margin: 0;
+}
+
+#root {
+}
+
+.App {
+  text-align: center;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 'header' 'main-view';
+
+  .title {
+    color: coral;
+  }
+
+  .measured-height {
+    position: fixed;
+    top: 150px;
+    right: 20px;
+    z-index: 10;
+    color: white;
+  }
+
+  .app-header {
+    grid-area: header;
+    display: none;
+  }
+
+  .view-root {
+    height: 100vh;
+    margin: 0;
+    grid-area: main-view;
+
+    .shiulon {
+      height: 100%;
+
+      .questions-container {
+        height: 100%;
+        position: relative;
+        padding: 0 20px;
+        text-align: left;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        background-color: #9bb3cc;
+
+        .question-container {
+          padding: 60px 0;
+        }
+      }
+    }
+  }
+}
